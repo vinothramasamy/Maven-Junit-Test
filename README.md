@@ -1,2 +1,2 @@
 # Maven-Junit-Test
-Updated
+Updated with junit report action
