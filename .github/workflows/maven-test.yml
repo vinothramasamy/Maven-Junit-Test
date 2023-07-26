@@ -30,7 +30,8 @@ jobs:
       run: mvn --batch-mode -Dmaven.test.failure.ignore=true test
       
     - name: Test Report
-      uses: dorny/test-reporter@v1
+      # uses: dorny/test-reporter@v1
+      uses: kumvijaya/junit-test-reporter@main
       if: success() || failure()    # run this step even if previous step failed
       with:
         name: JEST Tests            # Name of the check run which will be created
