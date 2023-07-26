@@ -3,6 +3,10 @@ name: Github Actions Maven Build Example
 on:
  push:
     branches: [ main ]
+    tags:
+      - '*'
+ pull_request:
+ workflow_dispatch:
 
 jobs:
   build:
